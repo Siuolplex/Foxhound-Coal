@@ -1,0 +1,48 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "fhcoal"
+version = "${mod_version}"
+displayName = "Foxhound Coal"
+authors = "Siuolplex"
+description = '''Various tweaks made for the Foxhound Modpack'''
+
+[[mixins]]
+config = "fhcoal.mixins.json"
+
+[[dependencies.fhcoal]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fhcoal]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fhcoal]]
+modId = "pastel"
+type = "optional"
+versionRange = "[1.1.5.5,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.fhcoal]]
+modId = "quark"
+type = "optional"
+versionRange = "[4.1,4.2)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.fhcoal]]
+modId = "create"
+type = "optional"
+versionRange = "[6.0.10,)"
+ordering = "AFTER"
+side = "BOTH"

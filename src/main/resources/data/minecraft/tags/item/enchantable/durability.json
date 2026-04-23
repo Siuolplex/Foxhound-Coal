@@ -1,0 +1,58 @@
+{
+  "values": [],
+  "replace": false,
+  "remove": [
+    {
+      "id": "pastel:bedrock_axe",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_boots",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_bow",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_chestplate",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_crossbow",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_fishing_rod",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_helmet",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_hoe",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_leggings",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_pickaxe",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_shears",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_shovel",
+      "required": "false"
+    },
+    {
+      "id": "pastel:bedrock_sword",
+      "required": "false"
+    }
+  ]
+}

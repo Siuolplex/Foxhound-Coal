@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "pastel:bedrock_hoe",
+      "required": false
+    },
+    {
+      "id": "aether:gravitite_hoe",
+      "required": false
+    },
+    {
+      "id": "deep_aether:stratus_hoe",
+      "required": false
+    }
+  ]
+}

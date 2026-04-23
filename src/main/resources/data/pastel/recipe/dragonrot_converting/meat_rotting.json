@@ -1,0 +1,20 @@
+{
+  "type": "pastel:dragonrot_converting",
+  "ingredient": [
+    {
+      "tag": "minecraft:meat"
+    }
+  ],
+  "result": {
+    "id": "minecraft:rotten_flesh",
+    "count": 1
+  },
+
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "pastel"
+    }
+  ]
+}
+
