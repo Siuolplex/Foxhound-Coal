@@ -1,0 +1,11 @@
+- Add Crushed versions of un-crushed items
+- Add additional dipping recipes
+
+REQUIRES CONFIG:
+- Remove Pastel Enchantment Pedestal
+- Remove Pastel Gem pedestal
+    - I really dont like having it be there
+    - Move raw ores to cooked variants
+    - Pastel devs dont hurt me I really do like whats being done I just have my own different vision (Non-renewable diamonds/netherite)
+- Rebalance various structures
+    - Add some structure cross-compat perhaps?

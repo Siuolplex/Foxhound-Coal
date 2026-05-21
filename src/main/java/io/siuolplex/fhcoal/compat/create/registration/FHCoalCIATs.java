@@ -1,8 +1,10 @@
 package io.siuolplex.fhcoal.compat.create.registration;
 
+import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.api.registry.CreateBuiltInRegistries;
 import com.simibubi.create.content.logistics.item.filter.attribute.ItemAttributeType;
 import com.simibubi.create.content.logistics.item.filter.attribute.SingletonItemAttribute;
+import com.simibubi.create.foundation.data.recipe.CreatePressingRecipeGen;
 import io.siuolplex.fhcoal.FHCoalTweaks;
 import io.siuolplex.fhcoal.compat.create.registration.pastel.PastelCreateIATs;
 import net.minecraft.core.Registry;
@@ -18,6 +20,9 @@ import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 public class FHCoalCIATs {
+    public static ItemAttributeType PRESSABLE = singleton("pressable", (s, w) -> FHCoalCIATs.testRecipe(s, w, AllRecipeTypes.PRESSING.getType()));
+    public static ItemAttributeType COMPACTABLE = singleton("compactable", (s, w) -> FHCoalCIATs.testRecipe(s, w, AllRecipeTypes.COMPACTING.getType()));
+
     static {
         if (ModList.get().isLoaded("pastel")) {
             PastelCreateIATs.init();
@@ -31,7 +36,7 @@ public class FHCoalCIATs {
                 .isPresent();
     }
 
-    // Made specifically for the dipping recipes. It should work if the recipe is essentially , but I wouldnt recommend using it unless you have to.
+    // Made specifically for the dipping recipes. It should work if the recipe is essentially single input, but I wouldnt recommend using it unless you have to.
     public static <T extends Recipe<RecipeInput>> boolean testRecipeUnstable(ItemStack s, Level w, RecipeType<T> type) {
         return w.getRecipeManager()
                 .getRecipeFor(type, new SingleRecipeInput(s.copy()), w) // Hopefully this works man...

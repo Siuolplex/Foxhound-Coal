@@ -5,6 +5,9 @@
   "create.item_attributes.fhcoal.dragonrot_dippable": "can be dipped in Dragonrot",
   "create.item_attributes.fhcoal.anvil_crushable": "can be crushed by an Anvil",
 
+  "create.item_attributes.fhcoal.pressable": "can be pressed",
+  "create.item_attributes.fhcoal.compactable": "can be compacted",
+
   "block.fhcoal.example_block": "Example Block",
   "item.fhcoal.example_item": "Example Item"
 }

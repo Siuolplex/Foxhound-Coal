@@ -88,7 +88,14 @@ repositories {
         }
     }
 
+    maven {
+        name = "Xander Maven"
+        url = "https://maven.isxander.dev/releases"
+    }
+
     maven { url = "https://mvn.devos.one/snapshots"}
+
+    maven { url = "https://packages.aether-mod.net/The-Aether" }
 
 
         //K4Unl's mirror of other modding-related mavens, in case they are down.
@@ -164,7 +171,6 @@ dependencies {
 
     implementation("dev.emi:emi-neoforge:${emi_version}")
 
-    // No Mans Land
     implementation("org.violetmoon.quark:Quark:${quark_version}-SNAPSHOT") {
         setChanging(true)
     }
@@ -176,7 +182,7 @@ dependencies {
     implementation("maven.modrinth:databank:${databank_version}") // Where is their real maven? Should this be local maven instead?
     implementation("maven.modrinth:pastel-mod:${pastel_version}")
     implementation("me.shedaniel.cloth:cloth-config-neoforge:${cloth_config_version}")
-
+    implementation("maven.modrinth:exclusions-lib:${exclusion_lib_version}-NEO")
     implementation("com.klikli_dev:modonomicon-${minecraft_version}-neoforge:${modonomicon_version}")
 
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}") { transitive = false }
@@ -191,7 +197,36 @@ dependencies {
         exclude group: "maven.modrinth"
         exclude group: "me.fallenbreath"
     }
+
+    implementation("maven.modrinth:create-trading-floor:${trading_hall_version}") // No maven I assume.
+
+    // Vanilla Backport's latest builds dont work in dev instances.
+    //implementation("maven.modrinth:vanillabackport:AZLyELAH") // BROKEN VERSION NUMBER SO NEED TO RELY ON VERSION ID - 1.1.7.4+Neo-1.21.1
+    //implementation("maven.modrinth:platform:v7P0nBi2") // BROKEN VERSION NUMBER SO NEED TO RELY ON VERSION ID - 1.3.3+Neo-1.21.1
+
+    implementation("maven.modrinth:enderscape:K3Vz3uXn") //BROKEN VERSION NUMBER SO NEED TO RELY ON VERSION ID - neoforge-1.0.9+mc1.21.1
+    implementation("maven.modrinth:trimmed:1.21-3.0.0+neoforge")
+    implementation("dev.isxander:yet-another-config-lib:3.8.2+1.21.1-neoforge")
+
+
     // Farmer's Delight
+    implementation("maven.modrinth:farmers-delight:1.21.1-1.3.2")
+    implementation("maven.modrinth:no-mans-delight:2.1.0")
+    implementation("maven.modrinth:aethers-delight:0.1.4.2")
+
+    //NML
+    implementation("maven.modrinth:no-mans-land:1.4.6")
+    implementation("maven.modrinth:mixed-litter:1.0.3")
+
+    //Aether
+    implementation("com.aetherteam.aether:aether:1.21.1-1.5.10-neoforge")
+    // Owo-lib (Dear god)
+    // Accessories
+    // Cumulus
+
+    // Enderscape
+    // Galosphere
+
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

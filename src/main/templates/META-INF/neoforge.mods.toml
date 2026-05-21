@@ -46,3 +46,10 @@ type = "optional"
 versionRange = "[6.0.10,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.fhcoal]]
+modId = "trading_depot"
+type = "optional"
+versionRange = "[3.0.16,)"
+ordering = "AFTER"
+side = "BOTH"

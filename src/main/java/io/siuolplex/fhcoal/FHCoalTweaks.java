@@ -22,7 +22,7 @@ public class FHCoalTweaks {
 
     public void registryHandler(RegisterEvent event) {
         if (event.getRegistryKey().equals(Registries.ITEM)) {
-            FHCoalItems.init();
+            FHCoalItems.init(event);
         } if (ModList.get().isLoaded("create")) {
             FHCoalCreate.createRegistryHandler(event);
         }

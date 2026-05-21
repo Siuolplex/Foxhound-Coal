@@ -1,7 +1,9 @@
 package io.siuolplex.fhcoal.compat.create;
 
 import com.simibubi.create.api.registry.CreateRegistries;
+import io.siuolplex.fhcoal.FHCoalItems;
 import io.siuolplex.fhcoal.compat.create.registration.FHCoalCIATs;
+import net.minecraft.core.registries.Registries;
 import net.neoforged.neoforge.registries.RegisterEvent;
 
 public class FHCoalCreate {
