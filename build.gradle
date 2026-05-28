@@ -130,6 +130,8 @@ neoForge {
         minecraftVersion = project.parchment_minecraft_version
     }
 
+    interfaceInjectionData.from "interfaces.json"
+
     runs {
         client {
             client()
@@ -212,7 +214,7 @@ dependencies {
     // Farmer's Delight
     implementation("maven.modrinth:farmers-delight:1.21.1-1.3.2")
     implementation("maven.modrinth:no-mans-delight:2.1.0")
-    implementation("maven.modrinth:aethers-delight:0.1.4.2")
+    //implementation("maven.modrinth:aethersdelight:0.1.4.2")
 
     //NML
     implementation("maven.modrinth:no-mans-land:1.4.6")

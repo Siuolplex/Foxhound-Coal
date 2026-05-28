@@ -1,0 +1,5 @@
+{
+  "net/minecraft/world/level/block/state/BlockState": [
+    "io/siuolplex/fhcoal/util/StatePlacementInfo"
+  ]
+}
