@@ -51,7 +51,10 @@ public class FHCoalTweaks {
     public void onPortal(BlockEvent.PortalSpawnEvent portalEvent) {
         if (portalEvent.getState().fhcoal$getPlacedByPlayer() == null || !portalEvent.getState().fhcoal$getPlacedByPlayer().hasPermissions(2)) {
             portalEvent.setCanceled(true);
+        } else {
+            portalEvent.getState().fhcoal$setPlacedByPlayer(null); // Needs to be reset because otherwise it wil always forever think that this is ok.
         }
+
 
 
         /*for (Player player : players) {
